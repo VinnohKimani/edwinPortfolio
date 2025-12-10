@@ -5,6 +5,8 @@ import Nav from "./Nav.jsx";
 import Home from "./Home.jsx";
 import AboutMe from "./AboutMe.jsx";
 import MyServices from "./MyServices.jsx";
+import Blog from "./Blog.jsx";
+import Contact from "./Contact.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -12,5 +14,7 @@ createRoot(document.getElementById("root")).render(
     <Home />
     <AboutMe />
     <MyServices />
+    <Blog />
+    <Contact />
   </StrictMode>
 );
