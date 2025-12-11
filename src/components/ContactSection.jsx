@@ -17,7 +17,7 @@ const ContactSection = () => {
   const upWork = "";
 
   return (
-    <div id="contact" className="min-h-screen px-20 bg-[rgb(9,23,71)]">
+    <div id="contact" className="min-h-screen px-20 bg-[rgb(9,23,71)] pb-10">
       <div>
         <h1 className="pt-30 text-4xl text-center text-[rgb(250,181,21)] hover:scale-110 duration-300 after:content-[''] after:block after:h-[3px] after:w-15 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-1 after:rounded-xl hover:cursor-pointer">
           Get In Touch

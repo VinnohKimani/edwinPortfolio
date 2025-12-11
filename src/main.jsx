@@ -7,6 +7,7 @@ import AboutMe from "./AboutMe.jsx";
 import MyServices from "./MyServices.jsx";
 import Blog from "./Blog.jsx";
 import Contact from "./Contact.jsx";
+import Footer from "./Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -16,5 +17,6 @@ createRoot(document.getElementById("root")).render(
     <MyServices />
     <Blog />
     <Contact />
+    <Footer/>
   </StrictMode>
 );
