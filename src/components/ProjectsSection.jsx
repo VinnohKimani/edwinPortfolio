@@ -65,7 +65,7 @@ const ProjectsSection = () => {
                 href={blog.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[rgb(250,181,21)] font-medium hover:underline"
+                className="text-[rgb(250,181,21)] font-medium hover:text-blue-600 hover:underline"
               >
                 Check it out →
               </a>
