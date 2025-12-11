@@ -64,7 +64,7 @@ const ServicesSection = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-white border-gray-200 shadow-md hover:cursor-pointer hover:shadow-lg transition-all duration-300 rounded-xl flex flex-col hover:-translate-y-2"
+            className="bg-gray-100 border-gray-200 shadow-md hover:cursor-pointer hover:shadow-lg transition-all duration-300 rounded-xl flex flex-col hover:-translate-y-2"
           >
             <div className="m-2">
               <h2 className="text-[rgb(250,181,21)] text-3xl font-semibold">

@@ -8,6 +8,7 @@ export const NavSection = () => {
     { id: "#myServices", name: "My Services" },
     { id: "#certifications", name: "Certifications" },
     { id: "#blog", name: "Blog" },
+    { id: "#Projects", name: "Projects" },
     { id: "#contact", name: "Contact" },
   ];
   useEffect(() => {
@@ -38,7 +39,7 @@ export const NavSection = () => {
     };
   }, []);
   return (
-    <nav className="w-full fixed bg-white shadow-md z-50">
+    <nav className="w-full fixed bg-[rgb(35,41,97)] shadow-md z-50">
       <div className="mx-auto px-20 py-3 flex justify-between items-center pt-6">
         <h1 className="text-4xl font-bold text-[rgb(250,181,21)] hover:cursor-pointer">
           Edwin Ruto
@@ -50,8 +51,8 @@ export const NavSection = () => {
                 href={link.id}
                 className={`pb-1 ${
                   active === link.id
-                    ? "text-[rgb(35,41,97)] border-b-2 border-[rgb(35,41,97)]"
-                    : "text-[rgb(250,181,21)] hover:text-[rgb(35,41,97)] hover:cursor-pointer"
+                    ? "text-yellow-400 border-b-2 border-[rgb(250,181,21)]"
+                    : "text-[rgb(250,181,21)] hover:text-yellow-400 hover:cursor-pointer"
                 }`}
               >
                 {link.name}

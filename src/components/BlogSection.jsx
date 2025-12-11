@@ -49,7 +49,7 @@ const BlogSection = () => {
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="flex flex-col bg-white rounded-xl shadow-md  duration-300 hover:scale-105 hover:cursor-pointer overflow-hidden"
+            className="flex flex-col bg-gray-100 rounded-xl shadow-md  duration-300 hover:scale-105 hover:cursor-pointer overflow-hidden"
           >
             <img
               src={blog.image}

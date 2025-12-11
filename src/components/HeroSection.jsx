@@ -30,7 +30,7 @@ export const HeroSection = () => {
           <img
             src="/HeroSectionImage4.png"
             alt="HeroSectionImage"
-            className="w-full max-w-md h-100 pb-10rounded-lg"
+            className="w-full max-w-md h-100 pb-10 rounded-lg"
           />
         </div>
       </div>

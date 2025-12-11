@@ -1,7 +1,6 @@
 import {
   Github,
   Linkedin,
-  LocateIcon,
   Mail,
   MapPin,
   Phone,
@@ -18,7 +17,7 @@ const ContactSection = () => {
   const upWork = "";
 
   return (
-    <div id="contact" className="min-h-screen px-20 bg-white">
+    <div id="contact" className="min-h-screen px-20 bg-[rgb(9,23,71)]">
       <div>
         <h1 className="pt-30 text-4xl text-center text-[rgb(250,181,21)] hover:scale-110 duration-300 after:content-[''] after:block after:h-[3px] after:w-15 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-1 after:rounded-xl hover:cursor-pointer">
           Get In Touch
@@ -29,7 +28,7 @@ const ContactSection = () => {
           <div
             className="flex
           items-center
-          bg-[rgb(35,41,97)]
+          bg-gray-100
           rounded-xl
           shadow-md
           hover:shadow-lg
@@ -39,19 +38,19 @@ const ContactSection = () => {
           hover:scale-110
           hover:cursor-pointer"
           >
-            <Mail size={40} className="text-[rgb(250,181,21)]" />
+            <Mail size={40} className="text-[#EA4335]" />
             <div className="ml-4">
               {" "}
-              <h2 className="text-lg font-semibold font-display text-[rgb(250,181,21)] ">
+              <h2 className="text-lg font-semibold font-display text-[#EA4335]">
                 Email
               </h2>
-              <p className="text-white italic">{email}</p>
+              <p className="text-[rgb(35,41,97)] italic">{email}</p>
             </div>
           </div>
           <div
             className="flex
           items-center
-          bg-[rgb(35,41,97)]
+          bg-gray-100
           rounded-xl
           shadow-md
           hover:shadow-lg
@@ -61,16 +60,16 @@ const ContactSection = () => {
           hover:scale-110
           hover:cursor-pointer mt-3"
           >
-            <Phone size={40} className="text-[rgb(250,181,21)]" />
+            <Phone size={40} className="text-[#34A853]" />
             <div className="ml-4">
-              <h2 className="text-[rgb(250,181,21)] ">Phone</h2>
-              <p className="text-white italic">{phone}</p>
+              <h2 className="text-[#34A853] ">Phone</h2>
+              <p className="text-[rgb(35,41,97)] italic">{phone}</p>
             </div>
           </div>
           <div
             className="flex
           items-center
-          bg-[rgb(35,41,97)]
+          bg-gray-100
           rounded-xl
           shadow-md
           hover:shadow-lg
@@ -83,52 +82,52 @@ const ContactSection = () => {
             <MapPin size={40} className="text-[rgb(250,181,21)]" />
             <div className="ml-4">
               <h2 className="text-[rgb(250,181,21)] ">Location</h2>
-              <p className="text-white italic">{location}</p>
+              <p className="text-[rgb(35,41,97)] italic">{location}</p>
             </div>
           </div>
-          <div className="flex items-center  bg-[rgb(35,41,97)] rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 hover:scale-110 hover:cursor-pointer mt-3">
-            <Linkedin size={40} className="text-[rgb(250,181,21)]" />
+          <div className="flex items-center  bg-gray-100 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 hover:scale-110 hover:cursor-pointer mt-3">
+            <Linkedin size={40} className="text-[#0077B5]" />
             <div className="ml-4">
-              <h2 className="text-lg font-semibold font-display text-[rgb(250,181,21)]">
+              <h2 className="text-lg font-semibold font-display text-[#0077B5]">
                 LinkendIn
               </h2>
               <a
                 href={linkendIn}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[rgb(250,181,21)] italic font-body hover:text-blue-600 hover:underline"
+                className="text-[rgb(35,41,97)] italic font-body hover:text-blue-600 hover:underline"
               >
                 Edwin Ruto
               </a>
             </div>
           </div>
-          <div className="flex items-center  bg-[rgb(35,41,97)] rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 hover:scale-110 hover:cursor-pointer mt-3">
-            <Github size={40} className="text-[rgb(250,181,21)]" />
+          <div className="flex items-center  bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 hover:scale-110 hover:cursor-pointer mt-3">
+            <Github size={40} className="text-black" />
             <div className="ml-4">
-              <h2 className="text-lg font-semibold font-display text-[rgb(250,181,21)]">
+              <h2 className="text-lg font-semibold font-display text-black">
                 GitHub
               </h2>
               <a
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[rgb(250,181,21)] italic font-body hover:text-blue-600 hover:underline"
+                className="text-[rgb(35,41,97)] italic font-body hover:text-blue-600 hover:underline"
               >
                 Edwin Ruto
               </a>
             </div>
           </div>
-          <div className="flex items-center  bg-[rgb(35,41,97)] rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 hover:scale-110 hover:cursor-pointer mt-3">
-            <Workflow size={40} className="text-[rgb(250,181,21)]" />
+          <div className="flex items-center  bg-gray-100 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 hover:scale-110 hover:cursor-pointer mt-3">
+            <Workflow size={40} className="text-black" />
             <div className="ml-4">
-              <h2 className="text-lg font-semibold font-display text-[rgb(250,181,21)]">
+              <h2 className="text-lg font-semibold font-display text-black">
                 UpWork
               </h2>
               <a
                 href={upWork}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[rgb(250,181,21)] italic font-body hover:text-blue-600 hover:underline"
+                className="text-[rgb(35,41,97)] italic font-body hover:text-blue-600 hover:underline"
               >
                 Edwin Ruto
               </a>
@@ -151,7 +150,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 name="First Name"
-                className="w-full p-3 rounded-xl bg-gray-400"
+                className="w-full p-3 rounded-xl bg-gray-100"
                 required
               />
               <label htmlFor="" className="text-[rgb(250,181,21)]">
@@ -160,7 +159,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 name="Last Name"
-                className="w-full p-3 rounded-xl bg-gray-400 "
+                className="w-full p-3 rounded-xl bg-gray-100"
                 required
               />
               <label htmlFor="" className="text-[rgb(250,181,21)]">
@@ -169,7 +168,7 @@ const ContactSection = () => {
               <input
                 type="email"
                 name="Email"
-                className="w-full p-3 rounded-xl bg-gray-400"
+                className="w-full p-3 rounded-xl bg-gray-100"
                 required
               />
               <label htmlFor="" className="text-[rgb(250,181,21)]">
@@ -178,7 +177,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 name="Subject"
-                className="w-full p-3 rounded-xl bg-gray-400"
+                className="w-full p-3 rounded-xl bg-gray-100"
                 required
               />
               <label htmlFor="" className="text-[rgb(250,181,21)]">
@@ -187,7 +186,7 @@ const ContactSection = () => {
               <textarea
                 name="description"
                 placeholder="Type here..."
-                className="w-full p-3 h-40 rounded-xl bg-gray-400"
+                className="w-full p-3 h-40 rounded-xl bg-gray-100"
                 required
               />
               <button
