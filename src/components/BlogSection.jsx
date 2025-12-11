@@ -40,7 +40,7 @@ const BlogSection = () => {
     },
   ];
   return (
-    <div id="blog" className="bg-[rgb(35,41,97)] px-20 min-h-screen">
+    <div id="blog" className="bg-[rgb(35,41,97)] px-20 min-h-screen pb-20">
       {" "}
       <h1 className="pt-30 text-4xl text-center text-[rgb(250,181,21)] hover:scale-110 duration-300 after:content-[''] after:block after:h-[3px] after:w-15 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-1 after:rounded-xl hover:cursor-pointer">
         My Blogs

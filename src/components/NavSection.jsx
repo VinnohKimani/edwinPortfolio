@@ -8,7 +8,7 @@ export const NavSection = () => {
     { id: "#myServices", name: "My Services" },
     { id: "#certifications", name: "Certifications" },
     { id: "#blog", name: "Blog" },
-    { id: "#Projects", name: "Projects" },
+    { id: "#projects", name: "Projects" },
     { id: "#contact", name: "Contact" },
   ];
   useEffect(() => {

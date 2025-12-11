@@ -1,11 +1,4 @@
-import {
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Workflow,
-} from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Workflow } from "lucide-react";
 import React from "react";
 
 const ContactSection = () => {
@@ -17,7 +10,7 @@ const ContactSection = () => {
   const upWork = "";
 
   return (
-    <div id="contact" className="min-h-screen px-20 bg-[rgb(9,23,71)] pb-10">
+    <div id="contact" className="min-h-screen px-20 bg-[rgb(35,41,97)] pb-20">
       <div>
         <h1 className="pt-30 text-4xl text-center text-[rgb(250,181,21)] hover:scale-110 duration-300 after:content-[''] after:block after:h-[3px] after:w-15 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-1 after:rounded-xl hover:cursor-pointer">
           Get In Touch
@@ -142,7 +135,7 @@ const ContactSection = () => {
             className="bg-[rgb(35,41,97)]
           rounded-xl"
           >
-            <div className="ml-4 pt-5 pb-5 px-2">
+            <div className="ml-4 pb-5 px-2">
               {" "}
               <label htmlFor="" className="text-[rgb(250,181,21)]">
                 First Name
