@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export const NavSection = () => {
   const [active, setActive] = useState("#home");
+  const [open, setOpen] = useState(false);
+
   const links = [
     { id: "#home", name: "Home" },
     { id: "#about", name: "About Me" },
@@ -11,48 +14,51 @@ export const NavSection = () => {
     { id: "#projects", name: "Projects" },
     { id: "#contact", name: "Contact" },
   ];
+
   useEffect(() => {
-    const handlescroll = () => {
+    const handleScroll = () => {
       let currentSection = "#home";
-      //   iterationg through the array of links
+
       links.forEach((link) => {
         const section = document.querySelector(link.id);
-        // check if sections exist
         if (section) {
-          // Get section position on the page
           const top = section.offsetTop;
           const height = section.offsetHeight;
-          //   Check the section that the user in
+
           if (
-            window.scrollY >= top - 100 &&
-            window.scrollY < top + height - 100
+            window.scrollY >= top - 120 &&
+            window.scrollY < top + height - 120
           ) {
             currentSection = link.id;
           }
         }
       });
+
       setActive(currentSection);
     };
-    window.addEventListener("scroll", handlescroll);
-    return () => {
-      window.removeEventListener("scroll", handlescroll);
-    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <nav className="w-full fixed bg-[rgb(35,41,97)] shadow-md z-50">
-      <div className="mx-auto px-20 py-3 flex justify-between items-center pt-6">
-        <h1 className="text-4xl font-bold text-[rgb(250,181,21)] hover:cursor-pointer">
+    <nav className="fixed w-full bg-[rgb(35,41,97)] shadow-md z-50">
+      <div className="flex justify-between items-center px-6 md:px-20 py-4">
+        {/* LOGO */}
+        <h1 className="text-2xl md:text-3xl font-bold text-[rgb(250,181,21)]">
           Edwin Ruto
         </h1>
-        <ul className="flex space-x-6 font-semibold">
+
+        {/* DESKTOP LINKS */}
+        <ul className="hidden md:flex space-x-6 font-semibold">
           {links.map((link) => (
             <li key={link.id}>
               <a
                 href={link.id}
-                className={`pb-1 ${
+                className={`pb-1 transition ${
                   active === link.id
                     ? "text-yellow-400 border-b-2 border-[rgb(250,181,21)]"
-                    : "text-[rgb(250,181,21)] hover:text-yellow-400 hover:cursor-pointer"
+                    : "text-[rgb(250,181,21)] hover:text-yellow-400"
                 }`}
               >
                 {link.name}
@@ -60,7 +66,39 @@ export const NavSection = () => {
             </li>
           ))}
         </ul>
+
+        {/* MOBILE MENU BUTTON */}
+        <button
+          className="md:hidden text-[rgb(250,181,21)]"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden bg-[rgb(35,41,97)] px-6 pb-4">
+          <ul className="flex flex-col space-y-4 font-semibold">
+            {links.map((link) => (
+              <li key={link.id}>
+                <a
+                  href={link.id}
+                  onClick={() => setOpen(false)}
+                  className={`block ${
+                    active === link.id
+                      ? "text-yellow-400"
+                      : "text-[rgb(250,181,21)] hover:text-yellow-400"
+                  }`}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

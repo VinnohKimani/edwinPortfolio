@@ -1,39 +1,48 @@
 import React from "react";
 
 export const HeroSection = () => {
-  const title = " Certified AWS Solution Architect and Instructor";
+  const title = "Certified AWS Solution Architect and Instructor";
   const pitch =
-    "Empowering Your Cloud Journey with Expert Guidance from a Certified AWS Solutions Architect and Instructor";
-  const slogan = "Transforming Your Vision with Scalable Cloud Solutions";
+    "Empowering your cloud journey with expert guidance from a Certified AWS Solutions Architect and Instructor";
+  const slogan = "Transforming your vision with scalable cloud solutions";
 
   return (
-    <div id="home" className="bg-[rgb(35,41,97)] text-white h-screen py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-20 px-20">
-        <div className="max-w-6xl mx-auto ">
-          <h1 className="text-[rgb(250,181,21)] font-bold text-5xl">
-            {" "}
+    <section
+      id="home"
+      className="bg-[rgb(35,41,97)] text-white min-h-screen flex items-center"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 md:px-20 py-20 w-full">
+        {/* TEXT */}
+        <div className="max-w-xl">
+          <h1 className="text-[rgb(250,181,21)] font-bold text-3xl sm:text-4xl lg:text-5xl">
             {title}
           </h1>
 
-          <h1 className="text-2xl font-semibold mt-4">{pitch}</h1>
-          <p className="text-lg mt-6">{slogan}</p>
-          <div className="">
-            <a
-              href="#contact"
-              className="inline-block mt-8 bg-[rgb(250,181,21)] text-white px-8 py-3 rounded-full font-semibold hover:text-black transition-all duration-300 hover:bg-yellow-400  hover:scale-110 shadow-sm"
-            >
-              Get In Touch
-            </a>
-          </div>
+          <h2 className="mt-4 text-lg sm:text-xl md:text-2xl font-semibold">
+            {pitch}
+          </h2>
+
+          <p className="mt-6 text-base sm:text-lg text-gray-200">{slogan}</p>
+
+          <a
+            href="#contact"
+            className="inline-block mt-8 bg-[rgb(250,181,21)] text-[rgb(35,41,97)]
+              px-6 py-3 rounded-full font-semibold
+              hover:bg-yellow-400 hover:scale-105 transition-all duration-300"
+          >
+            Get In Touch
+          </a>
         </div>
-        <div className="flex justify-center">
+
+        {/* IMAGE */}
+        <div className="flex justify-center md:justify-end">
           <img
             src="/HeroSectionImage4.png"
-            alt="HeroSectionImage"
-            className="w-full max-w-md h-100 pb-10 rounded-lg"
+            alt="Hero Section"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg object-contain"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

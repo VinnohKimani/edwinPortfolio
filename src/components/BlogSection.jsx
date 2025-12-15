@@ -39,35 +39,47 @@ const BlogSection = () => {
       link: "https://en.wikipedia.org/wiki/Blog",
     },
   ];
+
   return (
-    <div id="blog" className="bg-[rgb(35,41,97)] px-20 min-h-screen pb-20">
-      {" "}
-      <h1 className="pt-30 text-4xl text-center text-[rgb(250,181,21)] hover:scale-110 duration-300 after:content-[''] after:block after:h-[3px] after:w-15 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-1 after:rounded-xl hover:cursor-pointer">
+    <div
+      id="blog"
+      className="bg-[rgb(35,41,97)] px-6 md:px-20 min-h-screen pb-20"
+    >
+      <h1
+        className="pt-12 text-3xl md:text-4xl text-center text-[rgb(250,181,21)]
+        hover:scale-110 duration-300 after:content-[''] after:block after:h-[3px]
+        after:w-16 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-2 after:rounded-xl"
+      >
         My Blogs
       </h1>
-      <div className="grid grid-cols-2 gap-10 mt-10">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="flex flex-col bg-gray-100 rounded-xl shadow-md  duration-300 hover:scale-105 hover:cursor-pointer overflow-hidden"
+            className="flex flex-col bg-gray-100 rounded-xl shadow-md
+              duration-300 hover:scale-105 overflow-hidden"
           >
             <img
               src={blog.image}
               alt={blog.title}
-              className="w-full h-64 object-cover"
+              className="w-full h-48 sm:h-56 object-cover"
             />
-            <div className="m-5">
-              <h2 className="text-[rgb(250,181,21)] text-2xl font-semibold">
+
+            <div className="p-5 flex flex-col gap-3">
+              <h2 className="text-[rgb(250,181,21)] text-xl md:text-2xl font-semibold">
                 {blog.title}
               </h2>
-              <p>{blog.brief}</p>
+
+              <p className="text-sm md:text-base text-gray-700">{blog.brief}</p>
+
               <a
                 href={blog.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[rgb(250,181,21)] font-medium hover:text-blue-600 hover:underline"
+                className="text-[rgb(250,181,21)] font-medium hover:text-blue-600 hover:underline self-start"
               >
-                Learn More...
+                Learn More →
               </a>
             </div>
           </div>
