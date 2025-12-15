@@ -30,7 +30,7 @@ const AboutMeSection = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVA_HrQLjkHiJ2Ag5RGuwbFeDKRLfldnDasw&s"
+            src="public/myPhoto.png"
             alt="profile"
             className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover"
           />

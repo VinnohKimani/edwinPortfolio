@@ -61,12 +61,12 @@ const ProjectsSection = () => {
               className="w-full h-48 md:h-56 object-cover"
             />
 
-            <div className="p-5 flex flex-col flex-grow">
+            <div className="p-5 flex flex-col grow">
               <h2 className="text-[rgb(250,181,21)] text-xl font-semibold">
                 {project.title}
               </h2>
 
-              <p className="text-sm text-gray-700 mt-2 flex-grow">
+              <p className="text-sm text-gray-700 mt-2 grow">
                 {project.brief}
               </p>
 
