@@ -62,7 +62,7 @@ const ServicesSection = () => {
         </h2>
 
         <p className="text-white max-w-3xl mx-auto pt-2 text-sm md:text-base">
-          Beyond cloud services — a holistic approach to education and
+          Beyond cloud services a holistic approach to education and
           architecture in AWS solutions.
         </p>
       </div>

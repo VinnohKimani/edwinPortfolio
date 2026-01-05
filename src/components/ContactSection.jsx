@@ -2,12 +2,13 @@ import { Github, Linkedin, Mail, MapPin, Phone, Workflow } from "lucide-react";
 import React from "react";
 
 const ContactSection = () => {
-  const phone = "0712345678";
-  const email = "kimruto@gmail.com";
-  const location = "Nakuru";
-  const linkendIn = "";
-  const github = "";
+  const phone = "0717478898";
+  const email = "kimruto68@gmail.com";
+  const location = "Nairobi";
+  const linkendIn = "https://www.linkedin.com/in/edwin-kimutai-ruto";
+  const github = "https://github.com/kimruto68";
   const upWork = "";
+  const feiver = "https://www.fiverr.com/s/rEBx2Nb";
 
   return (
     <div
@@ -71,6 +72,13 @@ const ContactSection = () => {
             <Workflow size={32} />
             <div className="ml-4">
               <h2 className="font-semibold">UpWork</h2>
+              <a className="italic hover:underline">Edwin Ruto</a>
+            </div>
+          </div>
+          <div className="flex items-center bg-gray-100 rounded-xl shadow-md p-5 hover:scale-105 transition">
+            <Workflow size={32} />
+            <div className="ml-4">
+              <h2 className="font-semibold">Feiver</h2>
               <a className="italic hover:underline">Edwin Ruto</a>
             </div>
           </div>
