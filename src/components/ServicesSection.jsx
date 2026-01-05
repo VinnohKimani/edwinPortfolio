@@ -19,26 +19,27 @@ const ServicesSection = () => {
     },
     {
       id: "4",
-      title: "Tutorial Guides",
-      service: "Step-by-step tutorials for mastering AWS services.",
+      title: "Training",
+      service:
+        "Coaching for CCP and Solution Architect with study plans and practice tests.",
     },
     {
       id: "5",
-      title: "Alerts & Notifications",
+      title: "Handson Supoort ",
       service:
-        "Stay on track with instant alerts and notifications for your tasks.",
+        "Live deployments setup and troubleshooting for core services like: EC2, S3 and more.",
     },
     {
       id: "6",
       title: "Data Encryption",
       service:
-        "Top-tier encryption ensures all your data remains confidential.",
+        "Top tier encryption ensures all your data remains confidential.",
     },
     {
       id: "7",
-      title: "Offline Access",
+      title: "AWS CCP & S.A Exams Prep",
       service:
-        "Continue working on projects even without an internet connection.",
+        "Focussed preparation and one on one coaching to assist you pass in the first attempt",
     },
     {
       id: "8",
