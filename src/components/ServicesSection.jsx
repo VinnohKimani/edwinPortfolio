@@ -14,7 +14,7 @@ const ServicesSection = () => {
     },
     {
       id: "3",
-      title: "Seamless Integration",
+      title: "Seamless Migration",
       service: "Effortlessly connect AWS tools with your existing apps.",
     },
     {
@@ -25,7 +25,7 @@ const ServicesSection = () => {
     },
     {
       id: "5",
-      title: "Handson Supoort ",
+      title: "Hands-on Support ",
       service:
         "Live deployments setup and troubleshooting for core services like: EC2, S3 and more.",
     },
