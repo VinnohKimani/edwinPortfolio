@@ -56,7 +56,12 @@ const ContactSection = () => {
             <Linkedin size={32} className="text-[#0077B5]" />
             <div className="ml-4">
               <h2 className="font-semibold text-[#0077B5]">LinkedIn</h2>
-              <a className="italic hover:underline">Edwin Ruto</a>
+              <a
+                href={linkendIn}
+                className="italic hover:underline hover:text-[#0077B5]"
+              >
+                Edwin Ruto
+              </a>
             </div>
           </div>
 
@@ -64,7 +69,12 @@ const ContactSection = () => {
             <Github size={32} />
             <div className="ml-4">
               <h2 className="font-semibold">GitHub</h2>
-              <a className="italic hover:underline">Edwin Ruto</a>
+              <a
+                href={github}
+                className="italic hover:underline hover:text-[#0077B5]"
+              >
+                Edwin Ruto
+              </a>
             </div>
           </div>
 
@@ -72,14 +82,24 @@ const ContactSection = () => {
             <Workflow size={32} />
             <div className="ml-4">
               <h2 className="font-semibold">UpWork</h2>
-              <a className="italic hover:underline">Edwin Ruto</a>
+              <a
+                href={upWork}
+                className="italic hover:underline hover:text-[#0077B5]"
+              >
+                Edwin Ruto
+              </a>
             </div>
           </div>
           <div className="flex items-center bg-gray-100 rounded-xl shadow-md p-5 hover:scale-105 transition">
             <Workflow size={32} />
             <div className="ml-4">
               <h2 className="font-semibold">Feiver</h2>
-              <a className="italic hover:underline">Edwin Ruto</a>
+              <a
+                href={feiver}
+                className="italic hover:underline hover:text-[#0077B5]"
+              >
+                Edwin Ruto
+              </a>
             </div>
           </div>
         </div>
