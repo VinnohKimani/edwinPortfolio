@@ -10,7 +10,7 @@ const ContactSection = () => {
   const location = "Nairobi";
   const linkendIn = "https://www.linkedin.com/in/edwin-kimutai-ruto";
   const github = "https://github.com/kimruto68";
-  const upWork = "";
+  const upWork = "testlink";
   const feiver = "https://www.fiverr.com/s/rEBx2Nb";
 
   const formRef = useRef()
