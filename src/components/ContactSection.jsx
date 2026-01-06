@@ -1,8 +1,7 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Workflow } from "lucide-react";
-import emailJs  from "@emailjs/browser"
-import toast from "react-hot-toast";
+import emailJs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 import { useRef } from "react";
-
 
 const ContactSection = () => {
   const phone = "0717478898";
@@ -13,28 +12,28 @@ const ContactSection = () => {
   const upWork = "";
   const feiver = "https://www.fiverr.com/s/rEBx2Nb";
 
-  const formRef = useRef()
-  const sendEmail = (e)=>{
-    e.preventDefault()
-      console.log("sendEmail triggered");
-     emailJs
-       .sendForm(
-         import.meta.env.VITE_EMAILJS_SERVICE_ID,
-         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-         formRef.current,
-         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-       )
-       .then(
-         () => {
-           toast.success("Message sent successfully!");
-           formRef.current.reset();
-         },
-         (error) => {
-           console.error(error);
-           toast.error("Failed to send message. Please try again.");
-         }
-       );
-  }
+  const formRef = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("sendEmail triggered");
+    emailJs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          formRef.current.reset();
+        },
+        (error) => {
+          console.error(error);
+          toast.error("Failed to send message. Please try again.");
+        }
+      );
+  };
 
   return (
     <div
