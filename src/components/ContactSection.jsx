@@ -12,12 +12,7 @@ const ContactSection = () => {
   const github = "https://github.com/kimruto68";
   const upWork = "";
   const feiver = "https://www.fiverr.com/s/rEBx2Nb";
-const fields = [
-  { label: "First Name", name: "first_name" },
-  { label: "Last Name", name: "last_name" },
-  { label: "Email", name: "email" },
-  { label: "Subject", name: "subject" },
-];
+
   const formRef = useRef()
   const sendEmail = (e)=>{
     e.preventDefault()
@@ -134,26 +129,48 @@ const fields = [
             </div>
           </div>
         </div>
-
         {/* CONTACT FORM */}
         <form
           ref={formRef}
           onSubmit={sendEmail}
           className="bg-[rgb(35,41,97)] rounded-xl p-6 space-y-4"
         >
-          {fields.map((field) => (
-            <div key={field.name}>
-              <label className="text-[rgb(250,181,21)]">{field.label}</label>
-
-              <input
-                type={field.name === "email" ? "email" : "text"}
-                name={field.name}
-                className="w-full p-3 rounded-xl bg-gray-100"
-                required
-              />
-            </div>
-          ))}
-
+          <div>
+            <label className="text-[rgb(250,181,21)]">First Name</label>
+            <input
+              type="text"
+              name="first_name"
+              className="w-full p-3 rounded-xl bg-gray-100"
+              required
+            />
+          </div>
+          <div>
+            <label className="text-[rgb(250,181,21)]">Last Name</label>
+            <input
+              type="text"
+              name="last_name"
+              className="w-full p-3 rounded-xl bg-gray-100"
+              required
+            />
+          </div>
+          <div>
+            <label className="text-[rgb(250,181,21)]">Email</label>
+            <input
+              type="email"
+              name="email"
+              className="w-full p-3 rounded-xl bg-gray-100"
+              required
+            />
+          </div>
+          <div>
+            <label className="text-[rgb(250,181,21)]">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              className="w-full p-3 rounded-xl bg-gray-100"
+              required
+            />
+          </div>
           <div>
             <label className="text-[rgb(250,181,21)]">Message</label>
             <textarea
@@ -162,11 +179,10 @@ const fields = [
               required
             />
           </div>
-
           <button
             type="submit"
             className="w-full bg-[rgb(250,181,21)] text-[rgb(35,41,97)]
-            font-semibold py-3 rounded-xl hover:bg-yellow-300 hover:scale-105 transition"
+        font-semibold py-3 rounded-xl hover:bg-yellow-300 hover:scale-105 transition"
           >
             Send
           </button>
