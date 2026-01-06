@@ -10,9 +10,11 @@ import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 import Projects from "./Projects.jsx";
 import Certifications from "./Certifications.jsx";
+import { Toaster } from "react-hot-toast";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Toaster position="top-right"/>
     <Nav />
     <Home />
     <AboutMe />

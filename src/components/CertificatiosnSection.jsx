@@ -18,10 +18,10 @@ const CertificationsSection = () => {
       },
       {
         id: "3",
-        title: "AWS re/Start Graduate",
-        link: "https://www.credly.com/badges/a696d9e9-7d09-4a33-a73c-f57163034885",
+        title: "AWS Certified Cloud Practitioner",
+        link: "https://www.credly.com/badges/b69f56cb-c3d8-4c59-b58c-fa7c1fdeb0cf",
         image:
-          "https://images.credly.com/size/680x680/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png",
+          "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
       },
       {
         id: "4",
@@ -32,41 +32,34 @@ const CertificationsSection = () => {
       },
       {
         id: "5",
-        title: "AWS re/Start Accredited Instructor",
-        link: "https://www.credly.com/badges/23bb310c-34ba-4f01-bd42-099b917a8884",
+        title: "AWS re/Start Graduate",
+        link: "https://www.credly.com/badges/a696d9e9-7d09-4a33-a73c-f57163034885",
         image:
-          "https://images.credly.com/size/680x680/images/e426d40e-8a6a-4f72-866e-2abfcfbde46b/image.png",
+          "https://images.credly.com/size/680x680/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png",
       },
       {
         id: "6",
-        title: "AWS Certified Cloud Practitioner",
-        link: "https://www.credly.com/badges/b69f56cb-c3d8-4c59-b58c-fa7c1fdeb0cf",
-        image:
-          "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
-      },
-      {
-        id: "7",
         title: "CCNA: Enterprise Networking, Security, and Automation",
         link: "https://www.credly.com/badges/b4ea60c0-e510-463c-8286-d0aa6d9e5e8d",
         image:
           "https://images.credly.com/size/680x680/images/0a6d331e-8abf-4272-a949-33f754569a76/CCNAENSA__1_.png",
       },
       {
-        id: "8",
+        id: "7",
         title: "CCNA: Switching, Routing, and Wireless Essentials",
         link: "https://www.credly.com/badges/7e3edfff-b35c-4833-ac72-31be8f046df3",
         image:
           "https://images.credly.com/size/680x680/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png",
       },
       {
-        id: "9",
+        id: "8",
         title: "CCNA: Introduction to Networks",
         link: "https://www.credly.com/badges/bb02768a-19eb-48fc-8f8f-65ab2221acc0",
         image:
           "https://images.credly.com/size/680x680/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png",
       },
       {
-        id: "10",
+        id: "9",
         title: "Introduction to Cybersecurity",
         link: "https://www.credly.com/badges/e1985b77-82f1-4c55-add5-419fcef456f6",
         image:

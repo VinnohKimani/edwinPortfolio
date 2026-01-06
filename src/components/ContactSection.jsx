@@ -1,5 +1,8 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Workflow } from "lucide-react";
-import React from "react";
+import emailJs  from "@emailjs/browser"
+import toast from "react-hot-toast";
+import { useRef } from "react";
+
 
 const ContactSection = () => {
   const phone = "0717478898";
@@ -9,6 +12,34 @@ const ContactSection = () => {
   const github = "https://github.com/kimruto68";
   const upWork = "";
   const feiver = "https://www.fiverr.com/s/rEBx2Nb";
+const fields = [
+  { label: "First Name", name: "first_name" },
+  { label: "Last Name", name: "last_name" },
+  { label: "Email", name: "email" },
+  { label: "Subject", name: "subject" },
+];
+  const formRef = useRef()
+  const sendEmail = (e)=>{
+    e.preventDefault()
+      console.log("sendEmail triggered");
+     emailJs
+       .sendForm(
+         import.meta.env.VITE_EMAILJS_SERVICE_ID,
+         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+         formRef.current,
+         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+       )
+       .then(
+         () => {
+           toast.success("Message sent successfully!");
+           formRef.current.reset();
+         },
+         (error) => {
+           console.error(error);
+           toast.error("Failed to send message. Please try again.");
+         }
+       );
+  }
 
   return (
     <div
@@ -106,17 +137,17 @@ const ContactSection = () => {
 
         {/* CONTACT FORM */}
         <form
-          action="mailto:kimruto68@gmail.com"
-          method="POST"
-          encType="text/plain"
+          ref={formRef}
+          onSubmit={sendEmail}
           className="bg-[rgb(35,41,97)] rounded-xl p-6 space-y-4"
         >
-          {["First Name", "Last Name", "Email", "Subject"].map((field) => (
-            <div key={field}>
-              <label className="text-[rgb(250,181,21)]">{field}</label>
+          {fields.map((field) => (
+            <div key={field.name}>
+              <label className="text-[rgb(250,181,21)]">{field.label}</label>
+
               <input
-                type="text"
-                name={field}
+                type={field.name === "email" ? "email" : "text"}
+                name={field.name}
                 className="w-full p-3 rounded-xl bg-gray-100"
                 required
               />
@@ -126,7 +157,7 @@ const ContactSection = () => {
           <div>
             <label className="text-[rgb(250,181,21)]">Message</label>
             <textarea
-              name="description"
+              name="message"
               className="w-full p-3 h-32 rounded-xl bg-gray-100"
               required
             />
