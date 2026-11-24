@@ -52,11 +52,7 @@ export const CaseStudyPage = ({ project, onBack }) => {
 
         {/* HERO TITLE & DETAILS */}
         <section className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-primary border border-navy-light text-xs font-mono text-gold-accent font-semibold">
-            <span>Project Case Study</span>
-            <span>•</span>
-            <span>{project.number}</span>
-          </div>
+         
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
             {project.title}
