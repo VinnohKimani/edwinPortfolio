@@ -35,7 +35,7 @@ export const HeroSection = () => {
         </div>
 
         {/* IMAGE */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-start md:pl-8">
           <img
             src="/HeroSectionImage4.png"
             alt="Hero Section"
