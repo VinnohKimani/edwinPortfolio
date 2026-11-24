@@ -1,5 +1,6 @@
 import React from "react";
 import { projectsData } from "../data/projectsData";
+import syncedGithubRepos from "../data/githubRepos.json";
 import {
   ExternalLink,
   Github,
@@ -16,6 +17,9 @@ import {
   Terminal,
   Activity,
   ArrowRight,
+  GitFork,
+  Star,
+  Code2,
 } from "lucide-react";
 
 const iconMap = {
@@ -35,13 +39,14 @@ const iconMap = {
 export const ProjectsSection = ({ onSelectProject }) => {
   const featured = projectsData.find((p) => p.isFeatured);
   const otherProjects = projectsData.filter((p) => !p.isFeatured);
+  const repos = Array.isArray(syncedGithubRepos) ? syncedGithubRepos : [];
 
   return (
     <section
       id="projects"
       className="bg-navy-dark px-6 md:px-16 lg:px-20 min-h-screen py-24 text-white"
     >
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-20">
         {/* SECTION HEADER */}
         <div className="text-center space-y-3">
           <h1 className="text-3xl md:text-5xl font-bold text-gold-accent tracking-tight after:content-[''] after:block after:h-[3px] after:w-16 after:bg-gold-accent after:mx-auto after:mt-3 after:rounded-xl">
@@ -255,7 +260,77 @@ export const ProjectsSection = ({ onSelectProject }) => {
           ))}
         </div>
 
-        {/* 3. BUILT IN THE OPEN GITHUB REPO BANNER */}
+        {/* 3. LIVE GITHUB REPOSITORIES (AUTO-SYNCED) */}
+        {repos.length > 0 && (
+          <div className="space-y-6 pt-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-navy-light/60 pb-4">
+              <div>
+                <h3 className="text-2xl font-bold text-white flex items-center gap-2">
+                  <Code2 size={24} className="text-gold-accent" />
+                  <span>Latest Repositories</span>
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-400 mt-1">
+                  Synchronized live from Edwin's GitHub profile (@kimruto68)
+                </p>
+              </div>
+
+              <a
+                href="https://github.com/kimruto68?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-mono text-gold-accent hover:underline flex items-center gap-1.5 self-start sm:self-auto"
+              >
+                <span>Browse all on GitHub</span>
+                <ExternalLink size={13} />
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {repos.map((repo) => (
+                <a
+                  key={repo.name}
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-6 rounded-xl bg-navy-primary/60 border border-navy-light hover:border-gold-accent/50 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group shadow-md"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs font-semibold text-gold-accent">
+                        {repo.language || "Cloud"}
+                      </span>
+                      <ExternalLink
+                        size={14}
+                        className="text-gray-500 group-hover:text-gold-accent transition-colors"
+                      />
+                    </div>
+
+                    <h4 className="text-lg font-bold text-white group-hover:text-gold-accent transition-colors line-clamp-1">
+                      {repo.name}
+                    </h4>
+
+                    <p className="text-xs sm:text-sm text-gray-300 line-clamp-2 leading-relaxed">
+                      {repo.description}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center gap-4 text-xs font-mono text-gray-400 pt-4 mt-4 border-t border-navy-light/40">
+                    <span className="flex items-center gap-1">
+                      <Star size={13} />
+                      <span>{repo.stars || 0}</span>
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <GitFork size={13} />
+                      <span>{repo.forks || 0}</span>
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 4. BUILT IN THE OPEN GITHUB REPO BANNER */}
         <div className="rounded-2xl bg-gradient-to-r from-navy-primary via-navy-light to-navy-primary border border-navy-light p-8 sm:p-10 flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl">
           <div className="space-y-3 max-w-xl">
             <span className="text-xs font-mono uppercase tracking-widest text-gold-accent font-semibold flex items-center gap-2">
