@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy-dark: rgb(9, 23, 71);
+  --color-navy-primary: rgb(35, 41, 97);
+  --color-navy-light: rgb(48, 56, 130);
+  --color-gold-accent: rgb(250, 181, 21);
+  --color-gold-hover: #f59e0b;
+}
+
 html {
   scroll-behavior: smooth;
 }
