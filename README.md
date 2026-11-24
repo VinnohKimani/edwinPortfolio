@@ -9,7 +9,7 @@ A modern, responsive portfolio and case-study showcase for **Edwin Ruto**, an AW
 
 ---
 
-## 🚀 Key Highlights
+##  Key Highlights
 
 - **Interactive Architecture Case Studies:** In-depth technical breakdowns of AWS Infrastructure as Code (Terraform), resilient multi-AZ web servers, Docker containerization, and VPC networking.
 - **Automated Data Sync (GitHub Actions):** A scheduled GitHub Action runs every 12 hours to fetch Edwin's latest Medium articles and GitHub repositories, automatically keeping the portfolio fresh without manual code commits.
@@ -19,7 +19,7 @@ A modern, responsive portfolio and case-study showcase for **Edwin Ruto**, an AW
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework:** React 19
 - **Bundler:** Vite 7
@@ -65,7 +65,7 @@ edwinPortfolio/
 
 ---
 
-## 🤖 Content Automation
+##  Content Automation
 
 The portfolio maintains an automated pipeline defined in `.github/workflows/sync-portfolio.yml`:
 * **Medium Posts:** Periodically pulls latest publications from Medium via RSS.
