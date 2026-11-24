@@ -43,38 +43,40 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="bg-[rgb(9,23,71)] px-6 md:px-20 min-h-screen pb-20"
+      className="bg-navy-dark px-6 md:px-20 min-h-screen py-20"
     >
-      <h1 className="pt-20 text-3xl md:text-4xl text-center text-[rgb(250,181,21)] after:content-[''] after:block after:h-[3px] after:w-16 after:bg-[rgb(250,181,21)] after:mx-auto after:mt-2 after:rounded-xl">
+      <h1 className="text-3xl md:text-4xl text-center text-gold-accent after:content-[''] after:block after:h-[3px] after:w-16 after:bg-gold-accent after:mx-auto after:mt-2 after:rounded-xl">
         My Work
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-7xl mx-auto">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col bg-gray-100 rounded-xl shadow-md transition-transform duration-300 hover:scale-105 overflow-hidden"
+            className="flex flex-col bg-white rounded-xl shadow-lg border border-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl overflow-hidden"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 md:h-56 object-cover"
+              className="w-full h-48 md:h-52 object-cover"
             />
 
-            <div className="p-5 flex flex-col grow">
-              <h2 className="text-[rgb(250,181,21)] text-xl font-semibold">
-                {project.title}
-              </h2>
+            <div className="p-6 flex flex-col flex-1 justify-between gap-4">
+              <div className="space-y-2">
+                <h2 className="text-navy-primary text-xl font-bold">
+                  {project.title}
+                </h2>
 
-              <p className="text-sm text-gray-700 mt-2 grow">
-                {project.brief}
-              </p>
+                <p className="text-sm text-slate-600 line-clamp-3 leading-relaxed">
+                  {project.brief}
+                </p>
+              </div>
 
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-block text-[rgb(250,181,21)] font-medium hover:text-blue-600 hover:underline"
+                className="inline-flex items-center text-sm font-semibold text-navy-primary hover:text-gold-hover hover:underline pt-2 border-t border-slate-100"
               >
                 Check it out →
               </a>
