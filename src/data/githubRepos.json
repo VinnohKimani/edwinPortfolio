@@ -1,0 +1,11 @@
+[
+  {
+    "name": "terraform-aws-architecture",
+    "description": "Modular AWS infrastructure provisioned with Terraform. Version-controlled, repeatable, and built with clear separation of concerns.",
+    "url": "https://github.com/kimruto68/terraform-aws-architecture",
+    "stars": 0,
+    "forks": 0,
+    "language": "HCL",
+    "topics": ["aws", "terraform", "iac", "devops"]
+  }
+]

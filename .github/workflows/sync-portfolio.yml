@@ -1,0 +1,42 @@
+name: Sync Portfolio Data
+
+on:
+  schedule:
+    # Runs every 12 hours (at 00:00 and 12:00 UTC)
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from the Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit and push updated data files back to the repo
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run sync script
+        run: node scripts/sync-data.js
+
+      - name: Commit and push changes if any
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage only the updated JSON data files
+          git add src/data/blogsData.json src/data/githubRepos.json
+
+          # If there are no diffs, exit cleanly without committing
+          if git diff --staged --quiet; then
+            echo "No new updates found. Skipping commit."
+            exit 0
+          fi
+
+          git commit -m "chore(sync): auto-update Medium blogs and GitHub repos [skip ci]"
+          git push
