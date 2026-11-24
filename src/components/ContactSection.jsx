@@ -52,29 +52,53 @@ const ContactSection = () => {
         {/* CONTACT INFO */}
         <div className="space-y-4">
           {[
-            { icon: Mail, color: "#EA4335", label: "Email", value: email },
-            { icon: Phone, color: "#34A853", label: "Phone", value: phone },
+            {
+              icon: Mail,
+              color: "#EA4335",
+              label: "Email",
+              value: email,
+              href: `mailto:${email}`,
+            },
+            {
+              icon: Phone,
+              color: "#34A853",
+              label: "Phone",
+              value: phone,
+              href: `tel:${phone}`,
+            },
             {
               icon: MapPin,
               color: "rgb(250,181,21)",
               label: "Location",
               value: location,
+              href: null,
             },
-          ].map(({ icon: Icon, color, label, value }) => (
-            <div
-              key={label}
-              className="flex items-center bg-gray-100 rounded-xl shadow-md
-              transition-all duration-300 p-5 hover:scale-105"
-            >
-              <Icon size={32} style={{ color }} />
-              <div className="ml-4">
-                <h2 className="font-semibold" style={{ color }}>
-                  {label}
-                </h2>
-                <p className="text-[rgb(35,41,97)] italic">{value}</p>
+          ].map(({ icon: Icon, color, label, value, href }) => {
+            const content = (
+              <div
+                className="flex items-center bg-gray-100 rounded-xl shadow-md
+                transition-all duration-300 p-5 hover:scale-105 w-full"
+              >
+                <Icon size={32} style={{ color }} className="shrink-0" />
+                <div className="ml-4">
+                  <h2 className="font-semibold" style={{ color }}>
+                    {label}
+                  </h2>
+                  <p className="text-[rgb(35,41,97)] italic hover:underline">
+                    {value}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+
+            return href ? (
+              <a key={label} href={href} className="block">
+                {content}
+              </a>
+            ) : (
+              <div key={label}>{content}</div>
+            );
+          })}
 
           {/* SOCIAL LINKS */}
           <div className="flex items-center bg-gray-100 rounded-xl shadow-md p-5 hover:scale-105 transition">
