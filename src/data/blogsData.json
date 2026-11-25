@@ -1,44 +1,82 @@
 [
   {
     "id": "1",
-    "title": "How I Connected My Local Terraform Project to GitHub",
-    "image": "https://miro.medium.com/v2/resize:fit:1052/format:webp/1*QbeuXGcbd0lKAlhXKm-1cg.jpeg",
-    "brief": "As a cloud enthusiast working on real-world Infrastructure as Code (IaC) projects using Terraform, After completing a Terraform course on Udemy, I was excited to start pushing real Infrastructure as Code (IaC) projects to GitHub not only for version control but to showcase my work. I thought it would be a smooth git init and push. Spoiler alert: it wasn't.",
-    "link": "https://medium.com/@kimruto68/avoid-my-mistakes-pushing-your-iac-project-to-github-without-hitting-file-size-limits-059921437061"
+    "title": "Deploying My First Server with Terraform: A Beginner’s Guide",
+    "image": "https://cdn-images-1.medium.com/max/1024/1*1iCkaEDgqS8ZatFf7kXfGg.png",
+    "brief": "Today was the day things got real. I stopped reading about Infrastructure as Code and started executing it. By the end of this lab, I had a live web server running on AWS — provisioned entirely through code. If you’re following my #30DayTerraformChallenge , today’s focus was on the two most fundamen...",
+    "link": "https://medium.com/@kimruto68/deploying-my-first-server-with-terraform-a-beginners-guide-f98263a538ff?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-09-23 19:02:24"
   },
   {
     "id": "2",
-    "title": "Installing PostgreSQL, Node.js, and Deploying a Node.js App on Amazon EC2 Instance",
-    "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*fsvf1PM2ostGhDshKG8QDg.jpeg",
-    "brief": "Amazon Linux 2023 introduces some changes in package management. It uses dnf instead of amazon-linux-extras and provides PostgreSQL via AppStream repositories. This guide covers installing PostgreSQL, setting up a Node.js application, and ensuring it runs on an Amazon EC2 instance.",
-    "link": "https://medium.com/@kimruto68/installing-postgresql-node-js-and-deploying-a-node-js-app-on-amazon-linux-2023-908e10d7c429"
+    "title": "How I Cured My “AWS Billing Anxiety” with a Local Automation Script",
+    "image": "https://cdn-images-1.medium.com/max/926/1*zHRf0GoSm9iLTmSi2t7ghw.png",
+    "brief": "Let’s be honest: if you play around in the cloud, you’ve probably had this shared, recurring nightmare. You’re lying in bed, halfway to sleep, when a cold sweat hits you. “Did I actually run terraform destroy on that cluster earlier, or did I just close my laptop lid?” We’ve all been there. Out of s...",
+    "link": "https://medium.com/@kimruto68/how-i-cured-my-aws-billing-anxiety-with-a-local-automation-script-d7975eec3ee7?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-07-15 17:01:01"
   },
   {
     "id": "3",
-    "title": "Step-by-Step Guide to Install, Configure, and Use MySQL on an EC2 Instance",
-    "image": "https://miro.medium.com/v2/resize:fit:1382/format:webp/1*geGVnzRgb8oeOXYz0BdENw.jpeg",
-    "brief": "Why Set Up MySQL on an EC2 Instance? When it comes to hosting a MySQL database on AWS, you have two main options: Amazon RDS (Relational Database Service) or self-managed MySQL on an EC2 instance. Hosting MySQL on an EC2 instance gives you more control and flexibility over your database environment.",
-    "link": "https://medium.com/@kimruto68/step-by-step-guide-to-install-configure-and-use-mysql-on-an-ec2-instance-1173933f1706"
+    "title": "From Intimidating to Exhilarating: Containerizing and Pushing My Portfolio to Docker Hub",
+    "image": "https://cdn-images-1.medium.com/max/876/1*DyUGwYR1DH4yVUbvivXWqA.png",
+    "brief": "If you had asked me about Docker a while ago, I would have told you it was this overly complex, intimidating tool reserved only for senior DevOps engineers. I used to find it incredibly difficult to grasp. But lately, I’ve been diving deep into containerization, and I’ve realized something important...",
+    "link": "https://medium.com/@kimruto68/from-intimidating-to-exhilarating-containerizing-and-pushing-my-portfolio-to-docker-hub-e7f4782f6045?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-04-16 19:16:15"
   },
   {
     "id": "4",
-    "title": "How to Host a Simple Static Website on AWS S3: A Step-by-Step Guide",
-    "image": "https://miro.medium.com/v2/resize:fit:1020/format:webp/1*qi5neKYMErZMxDXPoAyodg.png",
-    "brief": "Amazon S3 (Simple Storage Service) is ideal for hosting static websites because it serves files directly to users without the need for server-side processing. A static website consists of fixed content — HTML, CSS, JavaScript, images, and other assets — delivered exactly as stored.",
-    "link": "https://medium.com/@kimruto68/how-to-host-a-simple-static-website-on-aws-s3-a-step-by-step-guide-cf00bb30ebda"
+    "title": "Managing High-Traffic Apps with AWS ALB &amp; Terraform (Day 5)",
+    "image": "https://cdn-images-1.medium.com/max/1024/1*WmuNwXB55g11h77jKUgvtw.png",
+    "brief": "If Day 4 was about building a cluster, Day 5 is about making that cluster Production-Ready . Today, I deployed an Elastic Load Balancer (ELB) to handle traffic and took a deep dive into the “brain” of Terraform: the State File . The Architecture: High Availability in Action A cluster is useless if u...",
+    "link": "https://medium.com/@kimruto68/managing-high-traffic-apps-with-aws-alb-terraform-day-5-7b9f09e51ac2?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-03-22 14:58:44"
   },
   {
     "id": "5",
-    "title": "Build Amazon VPC with Public and Private Subnets",
-    "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*NFdKnefu3qTjB8-WyZA7mA.png",
-    "brief": "A Virtual Private Cloud (VPC) is a customizable virtual network within the AWS Cloud, allowing you to define and control your own isolated environment for deploying cloud resources. It provides enhanced security and flexibility, making it a fundamental building block.",
-    "link": "https://medium.com/@kimruto68/build-amazon-vpc-with-public-and-private-subnets-118794259c2b"
+    "title": "Deploying a Highly Available Web App on AWS Using Terraform (Day 4)",
+    "image": "https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=49ae62e5780b",
+    "brief": "If Day 3 was about “Hello World,” Day 4 was about “Hello World, at Scale.” Today, I shifted from hardcoding values to using Input Variables and replaced my single EC2 instance with an Auto Scaling Group (ASG) and an Application Load Balancer (ALB) . 1. Embracing the DRY Principle The core lesson tod...",
+    "link": "https://medium.com/@kimruto68/deploying-a-highly-available-web-app-on-aws-using-terraform-day-4-49ae62e5780b?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-03-21 16:46:04"
   },
   {
     "id": "6",
-    "title": "A Step-by-Step Guide: Using M-Pesa Virtual Card to Sign Up for AWS",
-    "image": "https://miro.medium.com/v2/resize:fit:1074/format:webp/1*PJtFhx12pvZSex9Htbqhjw.jpeg",
-    "brief": "Imagine being able to create your AWS account without needing a physical bank card! Cloud enthusiast, Safaricom's virtual ATM card makes cloud access easy and seamless. In this post, I'll guide you step-by-step through setting up the virtual ATM card and using it to sign up for AWS.",
-    "link": "https://medium.com/@kimruto68/a-step-by-step-guide-using-m-pesa-virtual-card-to-sign-up-for-aws-8a4c4709d49a"
+    "title": "Deploying My First Server with Terraform: A Beginner’s Guide (Day 3)",
+    "image": "https://cdn-images-1.medium.com/max/1024/1*1iCkaEDgqS8ZatFf7kXfGg.png",
+    "brief": "Today was the day things got real. I stopped reading about Infrastructure as Code and started executing it. By the end of this lab, I had a live web server running on AWS — provisioned entirely through code. If you’re following my #30DayTerraformChallenge , today’s focus was on the two most fundamen...",
+    "link": "https://medium.com/@kimruto68/day-3-deploying-your-first-web-server-with-terraform-2721258224ac?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-03-19 17:01:57"
+  },
+  {
+    "id": "7",
+    "title": "Step-by-Step Guide: Setting Up Your Terraform &amp; AWS Environment",
+    "image": "https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=b636cca952f6",
+    "brief": "Yesterday was about the “Why.” Today is about the “How.” Setting up a local development environment is often where most beginners get stuck. Between environment variables, PATH issues, and AWS permissions, there are plenty of places to trip up. In this guide, I’ll walk you through the exact steps I ...",
+    "link": "https://medium.com/@kimruto68/step-by-step-guide-setting-up-your-terraform-aws-environment-b636cca952f6?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-03-18 15:53:53"
+  },
+  {
+    "id": "8",
+    "title": "What is Infrastructure as Code and Why It’s Transforming DevOps",
+    "image": "https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=8d4ec8840243",
+    "brief": "I recently kicked off a 30-day Terraform challenge, and Day 1 turned out to be more than just an introduction — it was a mindset shift. Before writing any infrastructure code, I found myself revisiting a foundational concept that is redefining modern cloud engineering: Infrastructure as Code (IaC). ...",
+    "link": "https://medium.com/@kimruto68/what-is-infrastructure-as-code-and-why-its-transforming-devops-8d4ec8840243?source=rss-aecac6850f9e------2",
+    "pubDate": "2026-03-17 14:53:01"
+  },
+  {
+    "id": "9",
+    "title": "Avoid My Mistakes: Pushing Your IaC Project to GitHub Without Hitting File Size Limits",
+    "image": "https://cdn-images-1.medium.com/max/526/1*QbeuXGcbd0lKAlhXKm-1cg.jpeg",
+    "brief": "How I Connected My Local Terraform Project to GitHub As a cloud enthusiast working on real-world Infrastructure as Code (IaC) projects using Terraform, After completing a Terraform course on Udemy, I was excited to start pushing real Infrastructure as Code (IaC) projects to GitHub — not only for ver...",
+    "link": "https://medium.com/@kimruto68/avoid-my-mistakes-pushing-your-iac-project-to-github-without-hitting-file-size-limits-059921437061?source=rss-aecac6850f9e------2",
+    "pubDate": "2025-06-08 22:51:52"
+  },
+  {
+    "id": "10",
+    "title": "Installing PostgreSQL, Node.js, and Deploying a Node.js App on Amazon Linux 2023",
+    "image": "https://cdn-images-1.medium.com/max/1024/1*fsvf1PM2ostGhDshKG8QDg.jpeg",
+    "brief": "Installing PostgreSQL, Node.js, and Deploying a Node.js App on Amazon EC2 Instance Amazon Linux 2023 introduces some changes in package management. It uses dnf instead of amazon-linux-extras and provides PostgreSQL via AppStream repositories. This guide covers installing PostgreSQL, setting up a Nod...",
+    "link": "https://medium.com/@kimruto68/installing-postgresql-node-js-and-deploying-a-node-js-app-on-amazon-linux-2023-908e10d7c429?source=rss-aecac6850f9e------2",
+    "pubDate": "2025-03-25 10:33:58"
   }
 ]

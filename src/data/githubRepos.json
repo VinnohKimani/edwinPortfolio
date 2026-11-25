@@ -1,11 +1,62 @@
 [
   {
+    "name": "scripts",
+    "description": "Cloud and DevOps infrastructure repository.",
+    "url": "https://github.com/kimruto68/scripts",
+    "stars": 0,
+    "forks": 0,
+    "language": "Shell",
+    "topics": [],
+    "updatedAt": "2026-07-15T10:05:54Z"
+  },
+  {
     "name": "terraform-aws-architecture",
-    "description": "Modular AWS infrastructure provisioned with Terraform. Version-controlled, repeatable, and built with clear separation of concerns.",
+    "description": "Cloud and DevOps infrastructure repository.",
     "url": "https://github.com/kimruto68/terraform-aws-architecture",
     "stars": 0,
     "forks": 0,
+    "language": "HTML",
+    "topics": [],
+    "updatedAt": "2026-06-06T20:37:51Z"
+  },
+  {
+    "name": "kimruto68",
+    "description": "Cloud and DevOps infrastructure repository.",
+    "url": "https://github.com/kimruto68/kimruto68",
+    "stars": 0,
+    "forks": 0,
     "language": "HCL",
-    "topics": ["aws", "terraform", "iac", "devops"]
+    "topics": [],
+    "updatedAt": "2026-06-01T16:48:00Z"
+  },
+  {
+    "name": "Dockerised-portfolio",
+    "description": "Cloud and DevOps infrastructure repository.",
+    "url": "https://github.com/kimruto68/Dockerised-portfolio",
+    "stars": 0,
+    "forks": 0,
+    "language": "HTML",
+    "topics": [],
+    "updatedAt": "2026-05-01T23:20:30Z"
+  },
+  {
+    "name": "30-day-Terraform-challenge",
+    "description": "🚀 My journey through the #30DayTerraformChallenge. Daily hands-on projects, infrastructure-as-code patterns on AWS, and lessons learned from \"creating, breaking, and rebuilding\" in the cloud. Organised by AWS AI/ML UserGroup Kenya & EveOps.",
+    "url": "https://github.com/kimruto68/30-day-Terraform-challenge",
+    "stars": 0,
+    "forks": 0,
+    "language": "HCL",
+    "topics": [],
+    "updatedAt": "2026-03-23T16:38:43Z"
+  },
+  {
+    "name": "30-day_terraform_challenge",
+    "description": "🚀 My journey through the #30DayTerraformChallenge. Daily hands-on projects, infrastructure-as-code patterns on AWS, and lessons learned from \"creating, breaking, and rebuilding\" in the cloud. Organised by AWS AI/ML UserGroup Kenya & EveOps.",
+    "url": "https://github.com/kimruto68/30-day_terraform_challenge",
+    "stars": 0,
+    "forks": 0,
+    "language": "HCL",
+    "topics": [],
+    "updatedAt": "2026-03-23T14:51:04Z"
   }
 ]
