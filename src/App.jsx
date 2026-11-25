@@ -42,16 +42,37 @@ export const App = () => {
     setSelectedProjectId(project.id);
   };
 
-  const handleBackToHome = () => {
-    window.location.hash = "projects";
+  const handleNavigateHome = () => {
+    window.location.hash = "home";
     setSelectedProjectId(null);
+    setTimeout(() => {
+      const el = document.getElementById("home");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }, 50);
+  };
+
+  const handleNavigateToProject = (projectId) => {
+    const targetId = projectId ? `project-${projectId}` : "projects";
+    window.location.hash = targetId;
+    setSelectedProjectId(null);
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId) || document.getElementById("projects");
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 50);
   };
 
   if (activeProject) {
     return (
       <CaseStudyPage
         project={activeProject}
-        onBack={handleBackToHome}
+        onNavigateHome={handleNavigateHome}
+        onNavigateProject={() => handleNavigateToProject(activeProject.id)}
       />
     );
   }

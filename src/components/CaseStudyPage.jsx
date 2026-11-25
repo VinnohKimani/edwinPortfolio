@@ -10,12 +10,15 @@ import {
   Home,
 } from "lucide-react";
 
-export const CaseStudyPage = ({ project, onBack }) => {
+export const CaseStudyPage = ({ project, onNavigateHome, onNavigateProject, onBack }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [project]);
 
   if (!project) return null;
+
+  const handleHomeClick = onNavigateHome || onBack;
+  const handleProjectsClick = onNavigateProject || onBack;
 
   return (
     <div className="min-h-screen bg-navy-dark text-white selection:bg-gold-accent selection:text-navy-dark">
@@ -27,7 +30,7 @@ export const CaseStudyPage = ({ project, onBack }) => {
           className="flex flex-wrap items-center gap-2 text-sm text-gray-400 pb-4 border-b border-navy-light/40"
         >
           <button
-            onClick={onBack}
+            onClick={handleHomeClick}
             className="flex items-center gap-1.5 hover:text-gold-accent transition-colors cursor-pointer"
           >
             <Home size={15} />
@@ -37,7 +40,7 @@ export const CaseStudyPage = ({ project, onBack }) => {
           <ChevronRight size={14} className="text-gray-500 shrink-0" />
 
           <button
-            onClick={onBack}
+            onClick={handleProjectsClick}
             className="hover:text-gold-accent transition-colors cursor-pointer"
           >
             <span>Projects</span>
@@ -299,11 +302,11 @@ export const CaseStudyPage = ({ project, onBack }) => {
         {/* BOTTOM NAVIGATION / BACK TO PORTFOLIO */}
         <div className="pt-6 pb-12 flex items-center justify-between border-t border-navy-light/40">
           <button
-            onClick={onBack}
+            onClick={handleProjectsClick}
             className="inline-flex items-center gap-2 text-sm font-semibold text-gold-accent hover:text-gold-hover hover:-translate-x-1 transition-all cursor-pointer"
           >
             <ArrowLeft size={18} />
-            <span>Back to All Projects</span>
+            <span>Back to This Project in Portfolio</span>
           </button>
 
           <button

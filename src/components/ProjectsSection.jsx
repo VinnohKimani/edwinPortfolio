@@ -59,7 +59,10 @@ export const ProjectsSection = ({ onSelectProject }) => {
 
         {/* 1. FEATURED PROJECT */}
         {featured && (
-          <div className="rounded-2xl bg-gradient-to-br from-navy-primary to-navy-dark border border-navy-light shadow-2xl p-6 sm:p-10 lg:p-12 transition-all duration-300 hover:border-gold-accent/40">
+          <div
+            id={`project-${featured.id}`}
+            className="rounded-2xl bg-gradient-to-br from-navy-primary to-navy-dark border border-navy-light shadow-2xl p-6 sm:p-10 lg:p-12 transition-all duration-300 hover:border-gold-accent/40 scroll-mt-24"
+          >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               {/* LEFT INFO */}
               <div className="lg:col-span-6 space-y-6">
@@ -183,7 +186,8 @@ export const ProjectsSection = ({ onSelectProject }) => {
           {otherProjects.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col justify-between rounded-xl bg-navy-primary border border-navy-light p-6 sm:p-8 hover:border-gold-accent/50 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
+              id={`project-${project.id}`}
+              className="flex flex-col justify-between rounded-xl bg-navy-primary border border-navy-light p-6 sm:p-8 hover:border-gold-accent/50 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 scroll-mt-24"
             >
               <div className="space-y-6">
                 {/* PIPELINE / FLOW VISUAL */}
