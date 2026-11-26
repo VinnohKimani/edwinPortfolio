@@ -10,23 +10,17 @@ A modern, responsive portfolio and case-study showcase for **Edwin Ruto**, an AW
 
 ---
 
-##  Key Highlights
 ## Key Highlights
 
 - **Interactive Architecture Case Studies:** In-depth technical breakdowns of AWS Infrastructure as Code (Terraform), resilient multi-AZ web servers, Docker containerization, and VPC networking.
 - **Automated Data Sync (GitHub Actions):** A scheduled GitHub Action runs every 12 hours to fetch Edwin's latest Medium articles and GitHub repositories, automatically keeping the portfolio fresh without manual code commits.
-- **Contact Form with EmailJS:** Direct, instant email forwarding with real-time feedback and notification toasts.
 - **Tailwind CSS v4 Theme:** Designed with a high-contrast Navy and Gold color palette (`navy-dark`, `navy-primary`, `gold-accent`) that complies with WCAG readability guidelines.
-- **Interactive Architecture Case Studies:** Full-page technical case studies detailing AWS Infrastructure as Code (Terraform), resilient multi-AZ web servers, Docker containerization, and VPC networking.
-- **Automated Content Sync (GitHub Actions):** A scheduled GitHub Action runs every 12 hours to fetch Edwin's latest Medium articles and GitHub repositories, automatically keeping the portfolio fresh without manual code commits.
 - **Live GitHub Repository Showcase:** Displays active public repositories with real-time star and fork metrics alongside custom cloud case studies.
 - **Direct Contact & Telephony Integration:** EmailJS contact form with real-time feedback notifications (`react-hot-toast`), paired with one-tap calling (`tel:`) and native email dispatch (`mailto:`).
-- **Tailwind CSS v4 Theme:** Designed with a high-contrast Navy and Gold color palette (`navy-dark`, `navy-primary`, `gold-accent`) meeting WCAG readability and accessibility guidelines.
 - **Credly & Medium Integration:** Verified Credly badge links for all AWS certifications and live previews for technical Medium publications.
 
 ---
 
-##  Tech Stack
 ##  Tech Stack
 
 - **Framework:** React 19
@@ -84,7 +78,6 @@ edwinPortfolio/
 
 ---
 
-##  Content Automation
 ##  Content Automation
 
 The portfolio maintains an automated pipeline defined in `.github/workflows/sync-portfolio.yml`:
